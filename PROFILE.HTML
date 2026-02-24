@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alok | Portfolio</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#000428);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color:white;
+}
+
+/* Animated Background */
+@keyframes gradientBG{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+/* Glass Effect */
+.glass{
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:20px;
+  padding:30px;
+}
+
+/* Header */
+header{
+  padding:20px 50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 15px;
+  position:relative;
+  transition:0.3s;
+}
+
+nav a::after{
+  content:"";
+  position:absolute;
+  width:0;
+  height:2px;
+  background:#00f7ff;
+  left:0;
+  bottom:-5px;
+  transition:0.3s;
+}
+
+nav a:hover::after{
+  width:100%;
+}
+
+/* Home Section */
+#home{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  gap:60px;
+  padding:50px;
+}
+
+.profile-img{
+  width:350px;
+  height:600px;
+  border-radius:50% / 40%;
+  object-fit:cover;
+  border:4px solid #00f7ff;
+  box-shadow:0 0 30px #00f7ff;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-20px)}
+}
+
+
+.home-text h1{
+  font-size:3rem;
+  background:linear-gradient(90deg,#00f7ff,#00ff88);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.home-text p{
+  margin: 30px;px 0;
+  color:#ccc;
+}
+
+.btn{
+  display:inline-block;
+  padding:10px 25px;
+  border-radius:30px;
+  border:1px solid #00f7ff;
+  color:#00f7ff;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#00f7ff;
+  color:black;
+  box-shadow:0 0 20px #00f7ff;
+}
+
+/* Sections */
+section{
+  padding:80px 10%;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:2.2rem;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.card{
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 20px #00f7ff;
+}
+
+/* Contact*/
+
+#contact {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 25px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.4s ease;
+}
+
+.social-card i {
+  font-size: 24px;
+}
+
+.social-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* Platform colors on hover */
+
+.email:hover {
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+}
+.instagram:hover {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.linkedin:hover {
+  background: #0077b5;
+}
+
+.github:hover {
+  background: #333;
+}
+/* Footer */
+footer{
+  text-align:center;
+  padding:20px;
+  background:rgba(0,0,0,0.5);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h3>@Alok.....</h3>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home">
+  <img src="yourphoto.jpg" alt="Alok" class="profile-img">
+  <div class="home-text">
+    <h1>Alok Prajapati</h1>
+    <p>B.tech (Electronic & Communication)<br>Bundelkhand University  Jhansi <br> <B>Frontend  Developer | Data Analyst | Data Scientist </B></p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="grid">
+    <div class="glass card">
+         <b>
+          I Am a passionate Frontend Developer and Data Analyst with a strong
+           foundation in Data Science. I enjoy building modern, responsive and
+           user-friendly web applications while also transforming raw data into
+            meaningful insights.
+         </b>
+    </div>
+    <div class="glass card">
+       <b>
+      My expertise includes React, JavaScript, and modern UI design on the
+      frontend, along with Python, SQL, and machine learning for data
+      analytics and modeling. I love solving real-world problems using both
+      code and data.
+       </b>
+    </div>
+    <div class="glass card">
+       <B>
+      As a B.Tech student in Electronics and Communication Engineering,
+      I continuously explore new technologies and aim to build scalable,
+      intelligent, and impactful digital solutions.
+       </B>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+
+    <div class="glass card">
+      <h3>Frontend Development</h3>
+      HTML5, CSS3, JavaScript (ES6+), React.js, Responsive Design
+    </div>
+
+    <div class="glass card">
+      <h3>Programming & Scripting</h3>
+      Python, R, SQL
+    </div>
+
+    <div class="glass card">
+      <h3>Data Analysis</h3>
+      Pandas, NumPy, Data Cleaning, Data Visualization
+      (Matplotlib, Seaborn), Exploratory Data Analysis (EDA)
+    </div>
+
+    <div class="glass card">
+      <h3>Machine Learning</h3>
+      Scikit-learn, Supervised & Unsupervised Learning,
+      Model Evaluation, Feature Engineering
+    </div>
+
+    <div class="glass card">
+      <h3>Tools & Platforms</h3>
+      Git, GitHub, Jupyter Notebook, VS Code,
+      AWS (Basics), Google Cloud (Basics)
+    </div>
+
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="glass card">Modern Portfolio Website</div>
+    <div class="glass card"> E-Commerce Sales Data Analytics Dashboard</div>
+    <div class="glass card">Netflix Content Analysis</div>
+    <div class="glass card">Social Media Trends & Sentiment Analytics</div>
+    <div class="glass card">Super Chain & Investory Optimization Analytics</div>
+    <div class="glass card">Bank Loan Risk & Customer Analytics </div>
+    <div class="glass card">NPL Resume Screening & Job Maching System </div>
+  </div>
+</section>
+
+
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <div class="contact-container">
+
+    <a href="mailto:alokprajapati1155@gmail.com" class="social-card email">
+      <i class="fas fa-envelope"></i>
+      <span>alokprajapati1155@gmail.com</span>
+    </a>
+
+    <a href="https://www.instagram.com/alok_52007?igsh=eXQ2N3Rlcm10eWcw" target="_blank" class="social-card instagram">
+      <i class="fab fa-instagram"></i>
+      <span>alok_52007</span>
+    </a>
+
+    <a href="https://www.linkedin.com/in/alok-prajapati-27b7583a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-card linkedin">
+      <i class="fab fa-linkedin"></i>
+      <span>alok-prajapati-27b7583a8</span>
+    </a>
+
+    <a href="https://github.com/alokprajapati1155-wq" target="_blank" class="social-card github">
+      <i class="fab fa-github"></i>
+      <span>alokprajapati1155-wq</span>
+    </a>
+    
+
+  </div>
+</section>
+<footer>
+  | © 2026 Alok Prajapati | 
+</footer>
+
+</body>
+</html>
